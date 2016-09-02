@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clayton Tevebaugh | Responsive Layout</title>
+  	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/picturefill.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container" id="home">
+			<header class="main-header">
+				<div class="logo">
+					<h1>Clay Tevebaugh</h1>
+				</div>
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav> 
+			</header><!--main-header--> 
+			
+			<div class="about clearfix">
+				<!--Update this img tag with a srcset attribute and three custom sized pictures for the different screen sizes like in the responsive image design course.-->
+				<div class="profile-img">
+					<img 
+					srcset="img/profile-large.jpg 1400w,
+							img/profile-small.jpg 800w"
+					sizes="(min-width: 768px) 1400px"
+					src="img/responsive-layout-profile.png"
+					alt="photograph of Clay Tevebaugh"
+					/>
+				</div>
+				<div class="bio">
+					<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finsihed a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+				</div><!--bio-->
+			</div><!--about-->
+		</div><!--container-->
+		
+		<div class="portfolio" id="portfolio">
+			<h2>Portfolio</h2>
+			
+			<figure>
+				<img src="img/portfolio-1.png" alt="Graphical image of a webpage." class="portfolio-img">
+				<figcaption>
+					<h4>Marketing Page</h4>
+					<p>This project shows the front page of a marketing website meant for a specific business I'm intersted in.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-2.png" alt="Graphical image of a search engine." class="portfolio-img"/>
+				<figcaption>
+					<h4>Search Page</h4>
+					<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-3.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Travel App</h4>
+					<p>This project compares travel times based on different transportation methods to tell you the best one.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-4.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Map of Favorite Spots</h4>
+					<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-5.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Photo Gallery</h4>
+					<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-6.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Calculator</h4>
+					<p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-7.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Video Player</h4>
+					<p>A custom video player designed to let give the viewer all the control they want when viewing their videos.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-8.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Channel Currator</h4>
+					<p>Using tags and your frient list this app helps discover new channels when you want new content to watch.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-9.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>File Storage</h4>
+					<p>Taking the hard work out of file organization to allow the user to sort their stuff a little bit easier.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-10.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Music Player</h4>
+					<p>Minimalistic music player to keep listening to music simple and beautiful.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-12.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Suggestion Box</h4>
+					<p>A reusable suggestion box to be used when a business needs a way to take user feedback.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-13.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Password Animation</h4>
+					<p>When a user enters the wrong password a cool custom animation tells them they got it wrong the first time and to try again.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-14.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Sticky Notes</h4>
+					<p>App that lets you take real life postits and enter them as digital sticky notes via a computers camera.</p>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="img/portfolio-15.png" alt="Graphical image of a webpage." class="portfolio-img"/>
+				<figcaption>
+					<h4>Empty Page</h4>
+					<p>True minimalizm at its finest. This website uses no code at all, its practically not even there.</p>
+				</figcaption>
+			</figure>
+
+		</div><!--portfolio-->
+		
+
+			<div class="skills" id="skills">
+				<h2>Skills</h2>
+				<div class="svg-group">
+					<div class="svg-wrapper"><img src="img/html.svg" alt="HTML Icon."></div>
+					<div class="svg-wrapper"><img src="img/css.svg" alt="Cascading Style Sheets Icon."></div>
+					<div class="svg-wrapper"><img src="img/js.svg" alt="JavaScript Icon."></div>
+					<div class="svg-wrapper"><img src="img/ai.svg" alt="Adobe Illustrator Icon."></div>
+					<div class="svg-wrapper"><img src="img/ps.svg" alt="Adobe PhotoShop Icon."></div>
+					<div class="svg-wrapper"><img src="img/id.svg" alt="Adobe InDesign Icon."></div>
+				</div>
+
+			</div><!--skills-->
+		<div class="container">
+			<div class="contact" id="contact">
+				<h2>Contact</h2>
+				<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+				<ul class="contact-info">
+	           		<li><a href="tel:1-971-404-5013"><span>Phone</span>1-971-404-5013</a></li>
+	           		<li><a href="mailto:teeveebaw@gmail.com"><span>Email</span>teeveebaw@gmail.com</a></li>
+	         	</ul>
+			</div><!--contact-->
+
+			<footer>
+				<h3>Clayton Tevebaugh</h3>
+				<a class="back-to-top" href="#home">Back to top</a>
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Skills</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</div><!--container-->
+	</div><!--wrapper-->
+</body>
+</html>
