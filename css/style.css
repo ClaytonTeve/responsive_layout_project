@@ -195,19 +195,23 @@ SKILLS
 .skills h2 {
 	color: #fff;
 }
+.svg-group {
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 320px;
+  justify-content: center;
+  margin: 0 auto;
+
+}
 
 .svg-wrapper {
 	text-align: center;
-	display: inline-block;
 	width: 130px;
 	padding: 5px 5px;
-	margin: 0 auto;
+
 }
 
-.svg-group {
-	width: 320px;
-	margin: 0 auto;
-}
+
 
 
 /************************************
@@ -269,7 +273,7 @@ MEDIA QUERIES
 ************************************/
 
 @media (min-width: 768px) {
-	
+
 	.main-header {
 		height: 200px;
 		justify-content: flex-end;
@@ -288,11 +292,7 @@ MEDIA QUERIES
 	}
 
 	.profile-img {
-		display: inline-block;
-		width: 45%;
-		float: right;
 		margin: 0;
-		padding-left: 15px;
 	}
 
 	.bio p {
@@ -303,29 +303,50 @@ MEDIA QUERIES
 
 	.about {
 		padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 	}
+
+  .about-item {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .bio {
+    flex: 1.4;
+  }
 
 	.portfolio {
 		width: 100%;
 		padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
 	}
+
+  .portfolio h2 {
+    width: 100%;
+  }
 
 	figure {
 		height: 450px;
-		width: 48%;
-		display: inline-block;
-		margin: 0 .8%;
-		vertical-align: top;
+		flex: 1 50%;
+    padding: 0 10px;
+    margin: 0;
 	}
 
-	.svg-wrapper {
-		margin: 10px 20px;
-	}
 
 	.svg-group {
 		width: 600px;
 		margin: 0 auto;
+    max-width: none;
 	}
+
+  .svg-wrapper {
+    margin: 10px 20px;
+  }
 
 	.contact {
 		width: 80%;
@@ -355,7 +376,7 @@ MEDIA QUERIES
 }
 
 @media (min-width: 1024px) {
-	
+
 
 	.main-header {
 		height: auto;
@@ -387,17 +408,13 @@ MEDIA QUERIES
 		font-size: 1.125em
 	}
 
-	.profile-img {
-		margin-left: 50px;
-		width: 42%;
-	}
-
 	.portfolio {
 		padding: 2%;
 	}
 
 	figure {
-		width: 31.3%;
+		flex: 1 33.33%;
+    max-width: 33.33%;
 	}
 
 	.skills {
@@ -406,7 +423,8 @@ MEDIA QUERIES
 	}
 
 	.svg-group {
-		width: 1150px;
+		justify-content: space-around;
+    width: 90%;
 	}
 
 	.bio {
@@ -419,8 +437,3 @@ MEDIA QUERIES
 
 
 }
-
-
-
-
-
